@@ -40,14 +40,14 @@
 
 					<div class='formItem'>
 						<label for='phoneNumber'>Phone Number:</label>
-						<input type='text' REGEX ME  id='phoneNumber' placeholder='+1 303-555-9999' name='phoneNumber'>
+						<input type='text' pattern='^[\d]*$'  id='phoneNumber' placeholder='+1 303-555-9999' name='phoneNumber'>
 					</div>
 				</div>
 
 				<div id='passwordHolster'>
 					<div class='formItem'>
-						<label for='password'>Password:</label>
-						<input type='password' id='password' placeholder='Password' name='password'>
+						<label for='password'>Password (at least 8 characters):</label>
+						<input type='password' id='password' placeholder='Password' name='password' minlength='8'>
 					</div>
 
 					<div class='formItem'>
