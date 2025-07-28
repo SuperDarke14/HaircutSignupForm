@@ -97,14 +97,51 @@ button {
 	flex: auto;
 	opacity: 1;
 }
+input {
+	border: 0.0075em;
+	border-radius: 0.125rem;
+	border-style: solid;
+}
+input:focus {
+	border: 0.0125em;
+	border-radius: 0.125rem;
+	border-style: solid;
+	
+}
+input:invalid {
+	border: 0.0075em;
+	border-radius: 0.12rem;
+	border-style: solid;
+	border-color: red;
+}
+
 #sideSplash {
 	display: flex;
 	flex-direction: column;
+	z-index: 0;
+	position: relative
 }
 
 #sideSplash img {
 	width: var(--image-width);
-	height: 100vw;
+	height: 100vh;
+}
+#logo-splash {
+	position: absolute;
+	z-index: 1;
+
+}
+
+#logo-splash, #logo-splash img{
+	display: flex;
+
+	}
+#logo-splash img {
+	max-height: 30%;
+	background-color: rgba(19, 99, 71, 0.2);
+	align-items: top;
+	justify-content: space-around;
+
 }
 
 #attribution {
